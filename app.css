@@ -1,0 +1,149 @@
+html { 
+ 
+  height: 100%;
+  
+}
+body{
+
+     
+     background: url("http://getwallpapers.com/wallpaper/full/6/f/0/450369.jpg") ;
+    
+     margin:0px;
+    width:100%;
+    background-size: cover;
+}
+
+.container{
+    z-index:2;
+}
+#logo { /* de el hello malkesh da3wa beha*/
+    font-family: "courier header";
+    color:#212121;
+    font-size:65px;
+    text-align: center;
+    margin:12px;
+}
+
+#mainContainer {
+    
+    max-width:30%;
+    margin:0 auto;
+    padding:0;
+}
+ul {
+    padding: 0;
+    margin:0;
+    list-style-type: none;
+}
+
+
+#blueDiv{
+    font-family: "Arial";
+    background-color: #5FBAD9;
+    color:white;
+    margin-bottom:0px;
+    
+}
+input{
+    background-color: #F0F0F0; /*the gray color we gon need that*/
+    padding:7px 7px 7px 15px;
+    margin:0px;
+    width:100%;
+    color:#696969;
+    border-width: 0px;
+}
+.completed{
+    text-decoration: line-through;
+}
+ 
+
+.listItem {
+    /*light grey*/
+   
+    background-color:white; /*the gray color we gon need that*/
+    margin:0px;
+    width:100%;
+    font-family: arial;
+    font-size: medium;
+    color:#696969;
+   font-weight:500;
+   overflow: hidden;
+   
+    
+}
+.listItem:nth-child(even){
+    /*ghame2*/
+     background-color: #F0F0F0; /*the gray color we gon need that*/
+    margin:0px;
+    width:100%;
+    font-size: medium;
+    color:#696969;
+    font-weight:500
+   /* padding: 9px 15px;*/
+   }
+  
+}
+li{
+    
+    padding:0px;
+}
+li:hover span{
+    opacity:1.0;
+    width:35px;
+}
+#deleteIcon{
+    color:yellow;/*
+    padding:10px 0;
+    height:50px;
+    width:70px;*/
+    background-color: red;
+}
+/*************************************************/
+/*warning css*/
+.warning {
+    margin-bottom:0;
+    padding-bottom:0;
+    color:grey;
+    background-color:grey;
+    width:100%;
+    
+}
+#warningg p {
+    padding:3px 0;
+    margin-bottom:5px;
+    text-align:center;
+    background-color:#F3E9E8;
+    border-left:3px red solid;
+     
+}
+.hide {
+    
+    display:none;
+}
+/*delete icon*/
+@media only screen and (max-width:768px){
+    /*for mobile screens*/
+    #mainContainer{
+        max-width:90%;
+    }
+    body{
+        height:100%;
+        width:100%;
+        background-size: cover;
+    }
+    
+}
+li span{
+    color:black;
+    font-size:14px;
+    background:#bf0707;
+    padding-top:7px;
+    height:35px;
+    margin-right:20px;
+    text-align:center;
+    color:white;
+    width:0;
+    display:inline-block;
+    transition: 0.2s linear;
+    opacity:0;
+}
