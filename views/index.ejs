@@ -3,27 +3,26 @@
     <head>
         <meta charset="utf-8">
         <title>To-Do</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="/stylesheets/app.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
-        <link type="text/css" rel="stylesheet" href="app.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-
-
         <link rel="shortcut icon" type="image/x-icon" href="https://cdn2.iconfinder.com/data/icons/business-office-icons/256/To-do_List-512.png">
+    
     </head>
     <body>
         <h1 id="logo"></h1>
-        <div class="container" style="display:none;">
+        <div class="container" style="display:none;" >
                 
             <div class="row">
                 <div id="mainContainer" class="col-md-12 ">
+                    <!--no input warning-->                    
                     <span id="warningg" class="hide" ><p >No Todo Was Added</p></span>
                     <div>
                         <h3 class="container" id="blueDiv">TO-DO LIST</h3>
                         <input  maxlength="60" placeholder="Add New Todo" type="text">
                         
-                        
                         <div id="todosContainer">
-                            
                             <ul>
                                 <li class="listItem"><span><i class=" far fa-trash-alt "></i></span>Hover to Delete</li>
                                 <li class="listItem"><span><i class=" far fa-trash-alt "></i></span>Click to mark completed</li>
@@ -38,7 +37,7 @@
             </div>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-        <script src="scripts.js"></script>
-  
+        <script src="/scripts/scripts.js"></script>
+ 
     </body>
 </html>

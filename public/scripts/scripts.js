@@ -1,4 +1,6 @@
 /*global $*/
+
+//the typewriter effect
 var i = 0;
 var logo = "Hello!";
 var myFunction = setInterval(function(){
@@ -10,10 +12,14 @@ var myFunction = setInterval(function(){
         $(".container").fadeIn("slow").delay(1000);
     }
 },80);
+
+
+// listeners
 $("input").on("click",function(){
      $(this).attr("placeholder"," ");
     
 });
+
 $("input").keypress(function(event){
   var input = $(this).val();
       if(input.length===0 && event.which===13){
@@ -26,6 +32,7 @@ $("input").keypress(function(event){
         $("li").last().attr("class","listItem");
         $("i").last().attr("class","far fa-trash-alt");
         $("input").val("");
+          completedTodo();
           deleteTodo();
     }
 });
@@ -40,12 +47,13 @@ var deleteTodo = function(){
 }
 deleteTodo();
     
-$("li").click(function(){
+var completedTodo = function(){
+    $("li").click(function(){
     $(this).toggleClass("completed");
     
 });
-
-
+};
+completedTodo();
     
 
 
